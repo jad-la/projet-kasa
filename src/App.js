@@ -1,14 +1,24 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Header from './components/Header';
+import Home from './pages/Home';
+import APropos from './pages/APropos';
+import FicheLogement from './pages/FicheLogement';
+import Erreur from './pages/Erreur';
 
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-      
-      </header>
-    </div>
+    <BrowserRouter>
+    <Routes>
+      <Route path='/' element={<Home/>}/>
+      <Route path='/a-propos' element={<APropos/>}/>
+      <Route path='/fiche-logement' element={<FicheLogement/>}/>
+      <Route path='*' element={<Erreur />}/>
+     
+    </Routes>
+    </BrowserRouter>
+  
   );
 }
 
