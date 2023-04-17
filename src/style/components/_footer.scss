@@ -1,0 +1,42 @@
+.footer{
+    width: 100%;
+    height: 209px;
+    background-color: black;
+    display: flex;
+    align-items: self-end;
+
+    div{
+        width: 100%;
+        height: 150px;
+        padding-bottom: 30px;
+        @include centerColumn
+    }
+    img{
+        width: 122px;
+        height: 40px;
+        
+    }
+
+    p{
+        font-size: 24px;
+        color: white;
+    }
+    
+    @media (max-width: 375px) {
+        align-items: center;
+        
+        div{
+            height: 100px;
+            padding-bottom: 0;
+        }
+        
+       
+        img{
+            width: 122px;
+            height: 39px;
+        }
+       p{
+        font-size: 12px;
+       }
+      }
+}

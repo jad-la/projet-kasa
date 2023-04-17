@@ -1,0 +1,25 @@
+main {
+    background-color: $color2;
+    padding: 50px 0px 50px 56px;
+    margin: 0 100px 43px 100px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px 56px;
+    border-radius: 25px;
+    
+  
+    &.page-a-propos {
+        background-color: #ffffff;
+    }
+
+    @media (max-width: 375px) {
+      margin-right: 20px;
+      margin-left: 20px;
+      gap: 20px;
+      &.page-accueil{
+      padding: 0;
+      background-color: #ffffff;
+      }  
+    }
+  }
