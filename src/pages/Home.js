@@ -7,9 +7,9 @@ import Footer from '../components/Footer';
 
 const Home = () => {
     return (
-        <div>  
+        <div className='page-accueil'>  
             <Header/> 
-            <Banner/>
+            <Banner imgSrc='./images/IMG-bannière.png' afficherTitre={true} page="accueil"/>
             <MainHome/>
             <Footer/> 
         </div>

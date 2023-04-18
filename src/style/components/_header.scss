@@ -12,16 +12,19 @@ header{
         @include centerVertical;
 
         @media (max-width: 375px) {
-            width: 140px;
-            height: 17px;
-            font-size: 12px;
+           
           }
     }
 
 
     @media (max-width: 375px) {
-       margin: 20px;
-     
+        margin: 20px;
+        width: 90%;
+        .nav{
+            width: 140px;
+            height: 17px;
+            font-size: 12px;
+        }
 
       }
 }

@@ -36,6 +36,7 @@
 
     @media (max-width: 375px) {
         height: 111px;
+        width: 90%;
         margin: 0 20px 20px 20px;
       
 
@@ -52,6 +53,10 @@
         &::before {
             border-radius: 10px;
         }
+
+        &.apropos-banner {
+            height: 223px;
+          }
 
       }
 

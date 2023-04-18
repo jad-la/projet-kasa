@@ -1,21 +1,24 @@
 main {
     background-color: $color2;
-    padding: 50px 0px 50px 56px;
-    margin: 0 100px 43px 100px;
+    width: 85%;
+    padding: 30px;
+    margin: auto;
+    border-radius: 25px;
     display: flex;
+    justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
-    gap: 50px 56px;
-    border-radius: 25px;
+    gap: 30px;
     
   
     &.page-a-propos {
         background-color: #ffffff;
+        padding: 0;
     }
 
     @media (max-width: 375px) {
-      margin-right: 20px;
-      margin-left: 20px;
+      width: 90%;
+      
       gap: 20px;
       &.page-accueil{
       padding: 0;
