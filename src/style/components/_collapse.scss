@@ -1,0 +1,53 @@
+.collapse-apropos{
+    width: 75%;
+    margin-bottom: 30px;
+    .toggle{
+        background-color: $color1;
+        width: 100%;
+        height: 47px;
+        border: none;
+        border-radius: 5px;
+        font-family: Montserrat;
+        font-size: 24px;
+        font-weight: 500;
+        color: white;
+        padding: 20px;
+        @include centerVertical;
+        
+
+    }
+
+    .para-Collapse{
+        background-color: $color2;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-bottom: 10px;
+        font-size: 16px;
+        border-radius: 5px;
+        height: 0px;
+        overflow: hidden;
+        transition: height ease 0.3s;
+        @include center
+    }
+    .para-Collapse.show{
+        height: 146px;
+    }
+
+    @media (max-width: 375px) {
+        width: 100%;
+        margin-bottom: 20px;
+        
+        .toggle{
+            height: 30px;
+            font-size: 13px;
+        }
+        .para-Collapse{
+            font-size: 12px;
+            align-items: flex-start;   
+
+            p{
+                margin-top: 10px;
+            }
+        }
+    }
+}

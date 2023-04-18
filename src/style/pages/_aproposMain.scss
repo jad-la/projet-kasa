@@ -1,0 +1,17 @@
+
+main.page-a-propos{
+    @include centerColumn;
+    
+   
+  
+
+    @media (max-width: 375px) {
+
+        margin-left: 20px;
+        width: 90%;
+        
+        
+       
+
+      }
+}
