@@ -9,7 +9,7 @@ const MainHome = () => {
       setData(annonces);
     }, [])
     return (
-            <main className='page-accueil'>
+            <main className='main-accueil'>
                  {data.map((annonce) => (
                     <Card key={annonce.id} annonce={annonce} />
                  ))}

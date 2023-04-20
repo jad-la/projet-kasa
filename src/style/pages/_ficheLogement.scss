@@ -1,0 +1,89 @@
+.mainFiche{
+    width: 80%;
+    padding: 10px 0;
+    margin: auto;
+
+
+    
+    .entete{
+        width: 100%;
+        font-family: Montserrat;
+        font-weight: 500;
+        margin-bottom: 30px;
+        
+        @include centerVertical;
+        gap: 20px;
+
+        p{
+            font-size: 18px;;
+        }
+        .title-location{
+            h2{
+                color: $color1;
+                font-weight: 500;
+                font-size: 36px;
+                margin-bottom:5px; 
+            }
+        }
+
+        .host{
+            @include center;
+          
+            .imgHost{
+                width:50px;
+                height:50px ;
+                margin-left: 10px;
+                border-radius: 50%;
+            }
+        }
+    }
+
+
+    .info-logement{
+        width: 100%;
+        margin-bottom: 50px; 
+        @include center;
+        gap: 30px;
+
+       .equi-ul{
+           width: 100%;
+             li{
+                 color: $color1;
+                 font-weight: 400;
+                 font-size: 18px;
+                 line-height: 142.6%;
+             }
+         }
+       
+    }
+
+    .tags-ratings{
+        @include centerVertical;
+        padding-bottom: 24px;
+        .tags{
+            
+            color: white;
+            font-size: 14px;
+            font-weight: 500;
+            display: flex;
+            justify-content: flex-start;
+            gap: 5px;
+
+           li{
+            text-align: center;
+            height: 25px;
+            background-color: $color1;
+            padding: 4px 25px;
+            border-radius: 10px;
+           }
+        }
+        .star{
+            color: $color2;
+            font-size: 25px;
+        }
+        .starColor{
+            color: $color1;
+            font-size: 25px;
+        }
+    }
+}

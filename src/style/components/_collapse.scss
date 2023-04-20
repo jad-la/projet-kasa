@@ -16,11 +16,10 @@
         
 
     }
-
+    
     .para-Collapse{
         background-color: $color2;
-        padding-left: 20px;
-        padding-right: 20px;
+      
         margin-bottom: 10px;
         font-size: 16px;
         border-radius: 5px;
@@ -29,8 +28,10 @@
         transition: height ease 0.3s;
         @include center
     }
+
     .para-Collapse.show{
-        height: 146px;
+        height: auto;
+        padding: 25px 20px;
     }
 
     @media (max-width: 375px) {

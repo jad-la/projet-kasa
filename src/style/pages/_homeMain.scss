@@ -1,8 +1,8 @@
-main {
-    background-color: $color2;
+.main-accueil {
     width: 85%;
     padding: 30px;
     margin: auto;
+    background-color:$color2;
     border-radius: 25px;
     display: flex;
     justify-content: space-evenly;
@@ -10,19 +10,10 @@ main {
     flex-wrap: wrap;
     gap: 30px;
     
-  
-    &.page-a-propos {
-        background-color: #ffffff;
-        padding: 0;
-    }
-
     @media (max-width: 375px) {
       width: 90%;
-      
-      gap: 20px;
-      &.page-accueil{
       padding: 0;
       background-color: #ffffff;
-      }  
+      gap: 20px;
     }
   }
