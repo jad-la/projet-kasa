@@ -1,0 +1,43 @@
+.mainErreur{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    
+    .erreur404{
+        width: 60%;
+        margin: auto;
+        p{
+            font-weight: 700;
+            font-size: 288px;
+        }
+    }
+    .p-message{
+        font-size: 36px;
+        font-weight: 500;
+        margin-bottom: 180px;
+        
+    }
+    .p-redirection{
+        font-size: 18px;
+        font-weight: 500;
+        margin-bottom: 120px;
+        text-decoration: underline;
+    }
+
+    @media (max-width: 375px) {
+
+        .erreur404{
+            margin-top: 150px;
+            p{
+                font-size: 100px;
+            }
+        }
+        .p-message{
+            font-size: 18px;
+            margin-bottom: 130px;
+        }
+        .p-redirection{
+            font-size: 14px;
+        }
+    }
+}

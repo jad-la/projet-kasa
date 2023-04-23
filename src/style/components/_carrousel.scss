@@ -1,27 +1,64 @@
 .parent-carrousel{
-    width: 90%;
+    width: 100%;
     height: 415px;
     margin: auto;
-    overflow: hidden;
-    position: relative;
-    border-radius: 25px;
     margin-bottom: 20px;
-    .flex-carrousel{
-        width: 100%;
-        height: 100%;
-        @include center;
-        transition: transform ease-out 0,8s;
-    }
+    position: relative;
+    @include center;
+
+   
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 25px;
+            margin-bottom: 20px;
+            
+          }
     .prev-next{
-        width: 100%;
         font-size: 65px;
         color: white;
         position: absolute;
         top: 50%;
-        left: 0;
         transform: translateY(-50%);
-        display: flex;
-        justify-content: space-between;
+
+        &:hover{
+            cursor: pointer;
+        }
+
+    }
+    .image-hidden {
+        display: none;
+    }
+    .prev{
+        left: 20px;
+    }
+    .next{
+        right:20px;
+    }
+
+    .numerotation{
+        position: absolute;
+        bottom: 20px;
+        color: white;
+        font-size: 18px;
+    }
+
+    @media (max-width: 375px) {
+        height: 255px;
+        .prev-next{
+            font-size: 35px;
+        }
+        .prev{
+            left:0px;
+        }
+        .next{
+            right:0px;
+        }
+        .numerotation{
+            bottom: 10px;
+        }
+
     }
     
 }

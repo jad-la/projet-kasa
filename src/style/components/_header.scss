@@ -1,9 +1,9 @@
 header{
-    width: auto 100%;
-    margin: 40px 100px 60px 100px;
+    width: 85%;
+    margin: 40px auto 25px ;
    
     @include centerVertical;
-
+    
     
     .nav{
         float: right;
@@ -11,9 +11,7 @@ header{
         width: 309px;
         @include centerVertical;
 
-        @media (max-width: 375px) {
-           
-          }
+      
     }
 
 
@@ -27,4 +25,5 @@ header{
         }
 
       }
+    
 }

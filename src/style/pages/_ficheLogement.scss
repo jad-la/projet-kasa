@@ -1,10 +1,8 @@
 .mainFiche{
-    width: 80%;
+    width: 90%;
     padding: 10px 0;
     margin: auto;
 
-
-    
     .entete{
         width: 100%;
         font-family: Montserrat;
@@ -18,32 +16,77 @@
             font-size: 18px;;
         }
         .title-location{
-            h2{
+            h1{
                 color: $color1;
                 font-weight: 500;
                 font-size: 36px;
                 margin-bottom:5px; 
             }
-        }
-
-        .host{
-            @include center;
-          
-            .imgHost{
-                width:50px;
-                height:50px ;
-                margin-left: 10px;
-                border-radius: 50%;
+            .tags{
+            
+                color: white;
+                font-size: 14px;
+                font-weight: 500;
+                display: flex;
+                justify-content: flex-start;
+                column-gap: 10px;
+                margin-top: 20px;
+    
+               li{
+                text-align: center;
+                height: 28px;
+                background-color: $color1;
+                padding: 5px 25px;
+                border-radius: 10px;
+               }
             }
         }
+
+        .host-ratings{
+            @include centerColumn;
+           
+            .host{
+                @include center;
+              
+                .imgHost{
+                    width:50px;
+                    height:50px ;
+                    margin-left: 10px;
+                    border-radius: 50%;
+                }
+            }
+            .rating-stars{
+                display: flex;
+                column-gap: 10px;
+                margin-top: 20px;
+                .star{
+                    color: #E3E3E3;
+                    font-size: 25px;
+                }
+                .starColor{
+                    color: $color1;
+                    font-size: 25px;
+                }
+            }
+        }
+
+        
     }
 
 
     .info-logement{
         width: 100%;
-        margin-bottom: 50px; 
-        @include center;
-        gap: 30px;
+        margin-bottom: 20px; 
+        display: flex;
+        justify-content: center;
+        column-gap: 50px;
+
+        .toggle{
+            border-radius: 10px;
+        }
+        p{
+            font-size: 18px;
+        }
 
        .equi-ul{
            width: 100%;
@@ -57,33 +100,66 @@
        
     }
 
-    .tags-ratings{
-        @include centerVertical;
-        padding-bottom: 24px;
-        .tags{
-            
-            color: white;
-            font-size: 14px;
-            font-weight: 500;
-            display: flex;
-            justify-content: flex-start;
-            gap: 5px;
+  
 
-           li{
-            text-align: center;
-            height: 25px;
-            background-color: $color1;
-            padding: 4px 25px;
-            border-radius: 10px;
-           }
+    @media (max-width: 375px) {
+      
+        .entete{
+            @include centerColumn;
+            .title-location{
+                width: 100%;
+                h1{
+                    font-size: 18px;
+                }
+                p{
+                    font-size: 14px;
+                }
+                .tags{
+                    font-size: 10px;
+                    margin-top: 10px;
+                }
+            }
+            .host-ratings{
+                width: 100%;
+                display: flex;
+                flex-direction: row-reverse;
+                justify-content: space-between;
+
+                .rating-stars{
+                    margin-top: 0;
+                    .star{
+                        font-size: 16px;
+                    }
+                    .starColor{
+                        font-size: 16px;
+                    }
+                }
+                .host{
+                    p{
+                        font-size: 12px;
+                    }
+                    img{
+                        width:32px;
+                        height:32px ; 
+                    }
+                }
+            }
+
+
         }
-        .star{
-            color: $color2;
-            font-size: 25px;
-        }
-        .starColor{
-            color: $color1;
-            font-size: 25px;
+
+        .info-logement{
+            @include centerColumn;
+
+            p{
+                font-size: 12px;
+                
+            }
+            .equi-ul{
+                  li{
+                    font-size: 12px;
+                  }
+              }
         }
     }
 }
