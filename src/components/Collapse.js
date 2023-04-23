@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
-import { FaAngleUp, FaAngleDown } from 'react-icons/fa';
+import { IoIosArrowUp, IoIosArrowDown } from 'react-icons/io';
 
 
 const Collapse = (props) => {
@@ -13,8 +13,10 @@ const Collapse = (props) => {
     return (
         <div className='collapse-apropos'>
             <button className='toggle' onClick={toggle}>
-                 <span>{props.label}</span>
-                {isOpen ? <FaAngleUp className="icon-up-down" /> : <FaAngleDown className="icon-up-down" />}
+                <span>{props.label}</span>
+                <span className="icon-up-down"  onClick={toggle}>
+                  {isOpen ? <IoIosArrowUp /> : <IoIosArrowDown />}
+                </span>
             </button>
              <div className={isOpen ?'para-Collapse show' : 'para-Collapse'}>{props.children}</div>
             

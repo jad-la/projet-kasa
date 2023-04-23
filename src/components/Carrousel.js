@@ -7,30 +7,33 @@ const Carrousel = ({pictures}) => {
 
     const gererClicPrecedent = () => {
         setIndexCourant(indexCourant === 0 ? pictures.length - 1 : indexCourant - 1);
+        
       };
-      const gererClicSuivant = () => {
+    const gererClicSuivant = () => {
         setIndexCourant(indexCourant === pictures.length - 1 ? 0 : indexCourant + 1);
       };
     
-
+    const numerotation = `${indexCourant + 1}/${pictures.length}`;
 
     return (
         <div className='parent-carrousel'>
-            <div className='flex-carrousel' style = {{transform: `translateX(-${indexCourant * 100}%)`}}>
-            {pictures.map((picture, index) => (
-          <img
-            key={index}
-            className={`img-Carrousel ${index === indexCourant ? 'active' : ''}`}
-            src={picture}
-            alt={`Annonce ${index}`}
-          />
-        ))}
-            </div>
 
-            <div className='prev-next'> 
-                <IoIosArrowBack className='prev' onClick={gererClicPrecedent}/>
-                <IoIosArrowForward className='next' onClick={gererClicSuivant}/>
-            </div>
+            {pictures.map((picture, index) => (
+              <img
+              key={index}
+              className={`img-Carrousel ${index === indexCourant ? 'prev-next' : 'image-hidden'}`}
+              src={picture}
+              alt={`Annonce ${index}`}
+              />
+            ))}
+            {pictures.length > 1 && (
+              <>
+                <IoIosArrowBack className='prev prev-next' onClick={gererClicPrecedent}/>
+                <IoIosArrowForward className='next prev-next' onClick={gererClicSuivant}/>
+              </>
+            )}
+            {pictures.length > 1 && <div className='numerotation'>{numerotation}</div>}
+           
         </div>
     );
 };

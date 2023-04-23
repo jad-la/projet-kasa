@@ -1,16 +1,20 @@
 import React from 'react';
 import Header from '../components/Header';
 import Banner from '../components/Banner';
-import MainHome from '../components/MainHome';
 import Footer from '../components/Footer';
+import Card from '../components/Card';
 
 
-const Home = () => {
+const Home = ({ annonces }) => {
     return (
         <div className='page-accueil'>  
             <Header/> 
             <Banner imgSrc='./images/IMG-bannière.png' afficherTitre={true} page="accueil"/>
-            <MainHome/>
+            <main className='main-accueil'>
+                 
+                    <Card  annonces={annonces} />
+                
+            </main>
             <Footer/> 
         </div>
       
