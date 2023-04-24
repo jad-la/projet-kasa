@@ -5,14 +5,14 @@ const Header = () => {
     return (
      <header > 
         <div className='logo'>
-            <img  src='../images/logo.svg' alt='logo Kasa'></img>
+            <img  src='/images/logo.svg' alt='logo Kasa'></img>
         </div>
         <ul className='nav'>
             <NavLink to="/">
-                <li>ACCUEIL</li>
+                <li>Accueil</li>
             </NavLink>
             <NavLink to="/a-propos">
-                <li>A PROPOS</li>
+                <li>A Propos</li>
             </NavLink>
         </ul>
      </header>

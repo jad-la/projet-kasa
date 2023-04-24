@@ -10,7 +10,7 @@ const Aboute = () => {
     return (
         <div>
            <Header/>
-           <Banner imgSrc='./images/banner-apropos.png' afficherTitre={false}  page="apropos"/>
+           <Banner imgSrc='/images/banner-apropos.png' afficherTitre={false}  page="apropos" alt='vue sur montagnes'/>
            <main className='page-a-propos'>
                 <Collapse className="collapse-p firstCollapse" label="Fiabilité" >
                     <p>Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées  par nos équipes.</p>

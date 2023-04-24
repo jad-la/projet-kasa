@@ -9,11 +9,11 @@ const Home = ({ annonces }) => {
     return (
         <div className='page-accueil'>  
             <Header/> 
-            <Banner imgSrc='./images/IMG-bannière.png' afficherTitre={true} page="accueil"/>
+            <Banner imgSrc='/images/IMG-bannière.png' afficherTitre={true} page="accueil" alt='vue sur mer'/>
             <main className='main-accueil'>
-                 
-                    <Card  annonces={annonces} />
-                
+                {annonces.map((annonce) => (
+                <Card annonce={annonce} key={annonce.id} />
+                ))}
             </main>
             <Footer/> 
         </div>
