@@ -1,5 +1,6 @@
 .mainFiche{
     width: 90%;
+    max-width: 1240px;
     padding: 10px 0;
     margin: auto;
 
@@ -79,8 +80,13 @@
         margin-bottom: 20px; 
         display: flex;
         justify-content: center;
-        column-gap: 50px;
+        flex-wrap: wrap;
+        column-gap: 40px;
 
+       .collapse-apropos{
+           width: 48%;
+        }
+       
         .toggle{
             border-radius: 10px;
         }
@@ -101,13 +107,58 @@
     }
 
   
+    @media (max-width: 1110px) {
+        .info-logement{
+            .collapse-apropos{
+                width: 100%;
+            }
+            p{
+                font-size: 14px;
+            }
+        }
+    }
+    @media (max-width: 600px) {
+        .entete{
+            flex-wrap: wrap;
+            .title-location{
+                width: 100%;
+                h1{
+                font-size: 25px;
+                }
+                p{
+                    font-size: 16px;
+                }
+            }
+            .host-ratings{
+                width: 100%;
+                display: flex;
+                flex-direction: row-reverse;
+                justify-content: space-between;
 
+                .rating-stars{
+                    margin-top: 0;
+                    .star{
+                        font-size: 20px;
+                    }
+                    .starColor{
+                        font-size: 20px;
+                    }
+                }
+                
+                .host{
+                    p{
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+        
+    }
     @media (max-width: 375px) {
       
         .entete{
-            @include centerColumn;
+            
             .title-location{
-                width: 100%;
                 h1{
                     font-size: 18px;
                 }
@@ -120,13 +171,7 @@
                 }
             }
             .host-ratings{
-                width: 100%;
-                display: flex;
-                flex-direction: row-reverse;
-                justify-content: space-between;
-
                 .rating-stars{
-                    margin-top: 0;
                     .star{
                         font-size: 16px;
                     }

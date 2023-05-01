@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { IoIosArrowForward, IoIosArrowBack } from 'react-icons/io';
 
 const Carrousel = ({pictures}) => {
     
@@ -21,15 +20,17 @@ const Carrousel = ({pictures}) => {
             {pictures.map((picture, index) => (
               <img
               key={index}
-              className={`img-Carrousel ${index === indexCourant ? 'prev-next' : 'image-hidden'}`}
+              className={` ${index === indexCourant ? 'img-Carrousel' : 'image-hidden'}`}
               src={picture}
               alt={`Annonce ${index}`}
               />
             ))}
             {pictures.length > 1 && (
               <>
-                <IoIosArrowBack className='prev prev-next' onClick={gererClicPrecedent}/>
-                <IoIosArrowForward className='next prev-next' onClick={gererClicSuivant}/>
+                <img src='/images/chevron-left.png' alt='flèche précédent' className='prev prev-next' onClick={gererClicPrecedent}/>
+                <img src='/images/chevron-right.png' alt='flèche suivant' className='next prev-next' onClick={gererClicSuivant}/>
+                {/* <IoIosArrowBack className='prev prev-next' onClick={gererClicPrecedent}/> */}
+                {/* <IoIosArrowForward className='next prev-next' onClick={gererClicSuivant}/> */}
               </>
             )}
             {pictures.length > 1 && <div className='numerotation'>{numerotation}</div>}

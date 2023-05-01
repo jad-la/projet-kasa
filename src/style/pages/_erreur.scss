@@ -14,22 +14,49 @@
     .p-message{
         font-size: 36px;
         font-weight: 500;
-        margin-bottom: 180px;
+        margin: auto;
         
     }
     .p-redirection{
         font-size: 18px;
         font-weight: 500;
+        margin-top: 80px;
         margin-bottom: 120px;
         text-decoration: underline;
     }
 
+    @media (max-width: 1024px) {
+        width: 100%;
+        .erreur404{
+            margin-top: 50px;
+           p{
+            font-size: 190px;
+           }
+        } 
+        .p-message{
+            width: 80%;
+            font-size: 26px;
+        }
+
+    }
+    @media (max-width: 600px) {
+        .erreur404{
+            margin-top: 100px;
+           p{
+            font-size: 115px;
+           }
+        } 
+        .p-message{
+            font-size: 20px;
+        }
+
+    }
     @media (max-width: 375px) {
 
         .erreur404{
             margin-top: 150px;
             p{
-                font-size: 100px;
+                font-size: 80px;
             }
         }
         .p-message{

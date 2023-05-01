@@ -1,6 +1,5 @@
 import React from 'react';
 import { useState } from 'react';
-import { IoIosArrowUp, IoIosArrowDown } from 'react-icons/io';
 
 
 const Collapse = (props) => {
@@ -15,7 +14,8 @@ const Collapse = (props) => {
             <button className='toggle' onClick={toggle}>
                 <span>{props.label}</span>
                 <span className="icon-up-down"  onClick={toggle}>
-                  {isOpen ? <IoIosArrowUp /> : <IoIosArrowDown />}
+                  {isOpen ? <img src='/images/flèche-up.png' alt='flèche développée'/> : <img src='/images/flèche-down.png' alt='flèche reduite'/>}
+                  {/* {isOpen ? <IoIosArrowUp /> : <IoIosArrowDown />} */}
                 </span>
             </button>
              <div className={isOpen ?'para-Collapse show' : 'para-Collapse'}>{props.children}</div>

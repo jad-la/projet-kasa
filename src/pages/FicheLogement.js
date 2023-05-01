@@ -64,3 +64,4 @@ const FicheLogement = ({annonces}) => {
 };
 
 export default FicheLogement;
+

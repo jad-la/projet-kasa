@@ -1,5 +1,6 @@
 header{
     width: 85%;
+    max-width: 1240px;
     margin: 40px auto 25px ;
    
     @include centerVertical;
@@ -23,7 +24,14 @@ header{
        }
     }
 
-
+    @media (max-width: 600px) {
+        .nav{
+            width: 190px;
+            height: 25px;
+            font-size: 18px;
+            column-gap: 20px;
+        }
+    }
     @media (max-width: 375px) {
         margin: 20px;
         width: 90%;

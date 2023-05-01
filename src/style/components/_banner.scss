@@ -1,5 +1,6 @@
 .banniere{
     width: 85%;
+    max-width: 1240px;
     height: 223px;
     margin: 55px auto 43px;
     position: relative;
@@ -34,18 +35,20 @@
         background-color: rgba(0, 0, 0, 0.3);
         border-radius: 25px;
     }
-
+    @media (max-width: 600px) {
+        h1{ 
+            font-size: 30px;
+            text-align: start;
+            left: 45%;
+        }
+    }
     @media (max-width: 375px) {
         height: 111px;
         width: 90%;
         margin: 0 20px 20px 20px;
-      
-
 
         h1{ 
             font-size: 24px;
-            text-align: start;
-            left: 45%;
         }
         img{
             border-radius: 10px;

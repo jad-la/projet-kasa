@@ -22,3 +22,4 @@ const Home = ({ annonces }) => {
 };
 
 export default Home;
+

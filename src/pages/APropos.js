@@ -26,9 +26,10 @@ const Aboute = () => {
                 </Collapse>
 
            </main>
-                <Footer/>
+            <Footer/>
         </div>
     );
 };
 
 export default Aboute;
+

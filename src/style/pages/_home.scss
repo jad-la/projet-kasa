@@ -1,5 +1,6 @@
 .main-accueil {
     width: 85%;
+    max-width: 1240px;
     padding: 30px;
     margin: auto;
     background-color:$color2;
@@ -9,6 +10,8 @@
     align-items: center;
     flex-wrap: wrap;
     gap: 30px;
+    
+
     
     @media (max-width: 375px) {
       width: 90%;

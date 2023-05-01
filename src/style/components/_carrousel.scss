@@ -7,16 +7,17 @@
     @include center;
 
    
-        img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            border-radius: 25px;
-            margin-bottom: 20px;
+    .img-Carrousel {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 25px;
+        margin-bottom: 20px;
             
-          }
+    }
     .prev-next{
-        font-size: 65px;
+     
+        width: 60px;
         color: white;
         position: absolute;
         top: 50%;
@@ -44,17 +45,22 @@
         font-size: 18px;
     }
 
-    
-    @media (max-width: 375px) {
-        height: 255px;
+    @media (max-width: 600px) {
+        height: 300px;
         .prev-next{
-            font-size: 35px;
+           width: 45px;
         }
         .prev{
             left:0px;
         }
         .next{
             right:0px;
+        }
+    }
+    @media (max-width: 375px) {
+        height: 255px;
+        .prev-next{
+            width: 35px;
         }
         .numerotation{
             bottom: 10px;

@@ -1,4 +1,6 @@
 main.page-a-propos{
+    max-width: 1240px;
+    margin: auto;
     @include centerColumn;
     
    
