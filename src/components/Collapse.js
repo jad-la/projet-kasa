@@ -15,7 +15,6 @@ const Collapse = (props) => {
                 <span>{props.label}</span>
                 <span className="icon-up-down"  onClick={toggle}>
                   {isOpen ? <img src='/images/flèche-up.png' alt='flèche développée'/> : <img src='/images/flèche-down.png' alt='flèche reduite'/>}
-                  {/* {isOpen ? <IoIosArrowUp /> : <IoIosArrowDown />} */}
                 </span>
             </button>
              <div className={isOpen ?'para-Collapse show' : 'para-Collapse'}>{props.children}</div>

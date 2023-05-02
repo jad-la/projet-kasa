@@ -17,6 +17,7 @@
             font-size: 18px;;
         }
         .title-location{
+            width: 60%;
             h1{
                 color: $color1;
                 font-weight: 500;
@@ -44,7 +45,9 @@
         }
 
         .host-ratings{
-            @include centerColumn;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
            
             .host{
                 @include center;
@@ -61,12 +64,10 @@
                 column-gap: 10px;
                 margin-top: 20px;
                 .star{
-                    color: #E3E3E3;
-                    font-size: 25px;
+                    width: 35px;
                 }
                 .starColor{
-                    color: $color1;
-                    font-size: 25px;
+                    width: 35px;
                 }
             }
         }
@@ -117,7 +118,7 @@
             }
         }
     }
-    @media (max-width: 600px) {
+    @media (max-width: 768px) {
         .entete{
             flex-wrap: wrap;
             .title-location{
@@ -134,20 +135,22 @@
                 display: flex;
                 flex-direction: row-reverse;
                 justify-content: space-between;
+                align-items: center;
 
                 .rating-stars{
                     margin-top: 0;
                     .star{
-                        font-size: 20px;
+                        width: 28px;
                     }
                     .starColor{
-                        font-size: 20px;
+                        width: 28px;
                     }
                 }
                 
                 .host{
                     p{
                         font-size: 14px;
+                        margin-right: 5px;
                     }
                 }
             }
@@ -173,15 +176,16 @@
             .host-ratings{
                 .rating-stars{
                     .star{
-                        font-size: 16px;
+                        width: 22px;
                     }
                     .starColor{
-                        font-size: 16px;
+                        width: 22px;
                     }
                 }
                 .host{
                     p{
                         font-size: 12px;
+                        text-align: center;
                     }
                     img{
                         width:32px;

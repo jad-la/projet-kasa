@@ -1,14 +1,14 @@
 import React from 'react';
-import { FaStar} from 'react-icons/fa';
+
 
 const RatingStars = ({ rating }) => {
     const stars = [];
   
     for (let i = 0; i < 5; i++) {
       if (i < rating) {
-        stars.push(<FaStar key={i} className="starColor" />);
+        stars.push(<img src='/images/étoile-coloré.png' alt='étoile colorée' className="starColor"/>);
       } else {
-        stars.push(<FaStar key={i} className="star" />);
+        stars.push(<img src='/images/étoile-grise.png' alt='étoile grise' className="star"/>);
       }
     }
   
